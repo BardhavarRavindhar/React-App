@@ -1,17 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from 'react-redux';
+import { LOCALSTORAGE_TODO_STATE } from "../store/actions/types";
 
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import { store } from "./store/configureStore";
-import './index.css';
+export const keyCodes = {
+  enter: 13,
+  space: 32,
+  esc: 27,
+  left: 37,
+  up: 38,
+  right: 39,
+  down: 40,
+  delete: 46
+};
 
-ReactDOM.render(
-  <Provider store={store}>
-      <App />
-  </Provider>,
-  document.getElementById("root")
-);
+export const getLocalStorageTodoState = (stringify=false) => {
+  const todoState = localStorage.getItem(LOCALSTORAGE_TODO_STATE);
+  const newState = todoState ? stringify ? JSON.stringify(todoState) : JSON.parse(todoState) : [];
 
-serviceWorker.unregister();
+  return newState;
+};
+
+export const setToLocalStorage = newState => {
+  localStorage.setItem(LOCALSTORAGE_TODO_STATE, JSON.stringify(newState));
+};

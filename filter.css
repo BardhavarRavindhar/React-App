@@ -1,0 +1,10 @@
+.o-app__filterBtnContainer {
+    
+    margin:3ex;
+    padding: 2ex;
+}
+.o-app__filterBtn{
+    padding:1ex;
+    margin:1ex;
+    background-color: lightseagreen;
+}

@@ -1,0 +1,8 @@
+.m-todo__checkbox {
+    background-color: deeppink;
+    width: 50px;
+}
+.m-todo__label {
+    background-color: fuchsia;
+    width: 50px;
+}

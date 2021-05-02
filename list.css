@@ -1,0 +1,35 @@
+.m-todo__list {
+    list-style-type: none;
+    padding: 2ex;
+    margin-right: 3ex;
+}
+.m-todo__btn {
+    color:black;
+    width: 50px;
+}
+
+.m-todo__input {
+    
+    padding: 1ex 2ex;
+    margin-left: 1ex;
+    font-size: large;
+    width: 350px;
+    
+}
+.m-todo__item {
+    
+    padding:1ex;
+}
+.m-todo__editInput {
+    font-size: large;
+    width: 300px;
+    height: 35px;
+    margin-left: 1ex;
+    margin-right: 1ex;
+    background-color: cyan;
+}
+.m-todo__desc {
+    border:1px solid black;
+    padding:0.9ex 1ex 1.5ex 1ex;
+    margin-right: 1ex;
+}
